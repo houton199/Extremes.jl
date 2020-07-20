@@ -26,7 +26,7 @@ bibliography: paper.bib
 
 # Summary
 
-Extremes plays a crucial role in statistics [bla bla]. Examples of applications : Climate change studies, hydrology, economics. An important aspect that is not covered by other packages is the handling of non-stationarity. This is particularly true for climate change studies where the trends are documented. This affects the estimation of future extreme events and a clear understanbding of the impactsd of CC on infrastructures.
+Extremes plays a crucial role in statistics (bla bla). Examples of applications : Climate change studies, hydrology, economics. An important aspect that is not covered by other packages is the handling of non-stationarity. This is particularly true for climate change studies where the trends are documented. This affects the estimation of future extreme events and a clear understanbding of the impactsd of CC on infrastructures.
 
 Extremes.jl provides exhaustive high-performance functions for the analysis of extreme values in Julia. In particular, methods for block maxima and threshold exceedances models are implemented, such as:
 
@@ -35,7 +35,7 @@ Extremes.jl provides exhaustive high-performance functions for the analysis of e
 * Diagnostic plots for assessing model accuracy.
 * Return level estimation.
 
-The package is largely based on the books of `@Coles:2001`, An Introduction to Statistical Modeling of Extreme Values, and of `@Beirlant:2004` Statistics of Extremes: Theory and Applications. The Tutorial section illustrates the package functionalities by reproducing many results obtained by [Coles:2001].
+The package is largely based on the books of `@Coles:2001`, An Introduction to Statistical Modeling of Extreme Values, and of `@Beirlant:2004` Statistics of Extremes: Theory and Applications. The Tutorial section illustrates the package functionalities by reproducing many results obtained by `@Coles:2001`.
 
 # Statement of need 
 
