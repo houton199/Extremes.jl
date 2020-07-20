@@ -39,7 +39,7 @@ The package is largely based on the books of `@Coles:2001`, An Introduction to S
 
 # Statement of need 
 
-`Extremes.jl` is a Jython package for Extremes modelling. Juia is a high-performance 
+`Extremes.jl` is a Julia package for Extremes modelling. Juia is a high-performance 
 language that leverage LLVM for Just-in-Time compilation. The API for `Extremes.jl` was
 designed to provide a clear approach, leveragin the multiple-dispatch capabilities of Julia.
 
