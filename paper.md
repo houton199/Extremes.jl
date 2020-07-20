@@ -35,7 +35,7 @@ Extremes.jl provides exhaustive high-performance functions for the analysis of e
 * Diagnostic plots for assessing model accuracy.
 * Return level estimation.
 
-The package is largely based on the books of `@Coles:2001`, An Introduction to Statistical Modeling of Extreme Values, and of `@Beirlant:2004` Statistics of Extremes: Theory and Applications. The Tutorial section illustrates the package functionalities by reproducing many results obtained by `@Coles:2001`.
+The package is largely based on the books of `@Coles2001`, An Introduction to Statistical Modeling of Extreme Values, and of `@Beirlant2004` Statistics of Extremes: Theory and Applications. The Tutorial section illustrates the package functionalities by reproducing many results obtained by `@Coles2001`.
 
 # Statement of need 
 
