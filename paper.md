@@ -1,63 +1,51 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'Extremes.jl: A Julia package for extremes'
 tags:
-  - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - Julia
+  - Extremes
+  - Statistics
+  - non-stationary
 authors:
-  - name: Adrian M. Price-Whelan^[Custom footnotes for e.g. denoting who the corresspoinding author is can be included like this.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
+  - name: Jonathan Jalbert^[Custom footnotes for e.g. denoting who the corresspoinding author is can be included like this.]
+    orcid: TO ADD
+    affiliation: 1 # (Multiple affiliations must be quoted)
+  - name: Marylou Farmer
+    affiliation: 1
+  - name: Philippe Roy
+    orcid: 0000-0003-1239-7589
     affiliation: 2
-  - name: Author with no affiliation
-    affiliation: 3
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
+ - name: École Polytechnique de Montréal
    index: 1
- - name: Institution Name
+ - name: Hydro-Québec
    index: 2
- - name: Independent Researcher
-   index: 3
-date: 13 August 2017
+ 
+date: 15 September 2020
 bibliography: paper.bib
-
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
----
 
 # Summary
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+Extremes plays a crucial role in statistics [bla bla]. Examples of applications : Climate change studies, hydrology, economics. An important aspect that is not covered by other packages is the handling of non-stationarity. This is particularly true for climate change studies where the trends are documented. This affects the estimation of future extreme events and a clear understanbding of the impactsd of CC on infrastructures.
+
+Extremes.jl provides exhaustive high-performance functions for the analysis of extreme values in Julia. In particular, methods for block maxima and threshold exceedances models are implemented, such as:
+
+* Parameter estimation by probability weighted moments, maximum likelihood and Bayesian procedure.
+* Stationary and non-stationary models.
+* Diagnostic plots for assessing model accuracy.
+* Return level estimation.
+
+The package is largely based on the books of `@Coles:2001`, An Introduction to Statistical Modeling of Extreme Values, and of `@Beirlant:2004` Statistics of Extremes: Theory and Applications. The Tutorial section illustrates the package functionalities by reproducing many results obtained by [Coles:2001].
 
 # Statement of need 
 
-`Gala` is an Astropy-affiliated Python package for galactic dynamics. Python
-enables wrapping low-level languages (e.g., C) for speed without losing
-flexibility or ease-of-use in the user-interface. The API for `Gala` was
-designed to provide a class-based and user-friendly interface to fast (C or
-Cython-optimized) implementations of common operations such as gravitational
-potential and force evaluation, orbit integration, dynamical transformations,
-and chaos indicators for nonlinear dynamics. `Gala` also relies heavily on and
-interfaces well with the implementations of physical units and astronomical
-coordinate systems in the `Astropy` package [@astropy] (`astropy.units` and
-`astropy.coordinates`).
+`Extremes.jl` is a Jython package for Extremes modelling. Juia is a high-performance 
+language that leverage LLVM for Just-in-Time compilation. The API for `Extremes.jl` was
+designed to provide a clear approach, leveragin the multiple-dispatch capabilities of Julia.
 
-`Gala` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
+`Extremes.jl` was designed to be used by extremes researchers,
+students in courses on extremes but also by engineers needing robust and powerful estimations of extremes.
+
+It has already been used in a number of scientific publications [@Pearson:2017] and has also been
 used in graduate courses on Galactic dynamics to, e.g., provide interactive
 visualizations of textbook material [@Binney:2008]. The combination of speed,
 design, and support for Astropy functionality in `Gala` will enable exciting
@@ -109,7 +97,6 @@ for n in range(10):
 
 # Acknowledgements
 
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
+We acknowledge contributions from [...].
 
 # References
